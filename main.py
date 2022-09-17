@@ -5,7 +5,6 @@ from discord import Permissions
 from colorama import Fore, Style
 import asyncio
 import requests
-import keep_alive
 
 token = "your-token"
 
@@ -15,7 +14,6 @@ SPAM_MESSAGE = ["@everyone Nuked By https://cdn.discordapp.com/attachments/82994
 
 client = commands.Bot(command_prefix="!")
 
-keep_alive.keep_alive() 
 
 @client.event
 async def on_ready():
